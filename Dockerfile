@@ -1,7 +1,7 @@
-FROM python:3.12-rc-slim
+FROM python:3.8
+
+WORKDIR /app
+
+COPY hello-world .
 
 EXPOSE 80
-
-ENTRYPOINT ["python", "/usr/src/app/hello-world.py"]
-
-LABEL org.opencontainers.image.source https://github.com/robertshand/python-helll-world
